@@ -3,15 +3,15 @@ import HeadingGrade from './HeadingGrade'
 import CompareSec from './CompareSec'
 import Image from 'next/image';
 
-import HTML from '../../Public/Assets/skill-img/html5.png'
-import CSS from '../../public/Assets/skill-img/css.webp';
-import JS from '../../public/Assets/skill-img/js.png';
-import jQuery from '../../public/Assets/skill-img/jquery.png';
-import ReactImg from '../../public/Assets/skill-img/react.webp';
-import SCSS from '../../public/Assets/skill-img/scss.png';
-import Bootstrap from '../../public/Assets/skill-img/boot.webp';
-import Jira from '../../public/Assets/skill-img/jira.webp';
-import TailwindCSS from '../../public/Assets/skill-img/tailwinf.webp';
+import HTML from '/Public/Assets/skill-img/html5.png'
+import CSS from '/Public/Assets/skill-img/css.webp';
+import JS from '/Public/Assets/skill-img/js.png';
+import jQuery from '/Public/Assets/skill-img/jquery.png';
+import ReactImg from '/Public/Assets/skill-img/react.webp';
+import SCSS from '/Public/Assets/skill-img/scss.png';
+import Bootstrap from '/Public/Assets/skill-img/boot.webp';
+import Jira from '/Public/Assets/skill-img/jira.webp';
+import TailwindCSS from '/Public/Assets/skill-img/tailwinf.webp';
 import { div } from 'framer-motion/client';
 
 const skills = [

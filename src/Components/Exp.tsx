@@ -3,20 +3,20 @@ import HeadingGrade from './HeadingGrade'
 import { Timeline } from "./ui/timeline";
 import Image from "next/image";
 
-import mac from '../../Public/Assets/macpage.png'
+import mac from '/Public/Assets/macpage.png'
 
-import tka1 from '../../Public/Assets/tka-exp/img (1).png'
-import tka2 from '../../Public/Assets/tka-exp/img (2).png'
-import tka3 from '../../Public/Assets/tka-exp/img (3).png'
-import tka4 from '../../Public/Assets/tka-exp/img (4).png'
+import tka1 from '/Public/Assets/tka-exp/tka-img-1.png'
+import tka2 from '/Public/Assets/tka-exp/tka-img-2.png'
+import tka3 from '/Public/Assets/tka-exp/tka-img-3.png'
+import tka4 from '/Public/Assets/tka-exp/tka-img-4.png'
 
-import tata1 from '../../Public/Assets/tata-nexarc-exp/img-tata (1).png'
-import tata2 from '../../Public/Assets/tata-nexarc-exp/img-tata (2).png'
-import tata3 from '../../Public/Assets/tata-nexarc-exp/img-tata (3).png'
+import tata1 from '/Public/Assets/tata-nexarc-exp/img-tata-1.png'
+import tata2 from '/Public/Assets/tata-nexarc-exp/img-tata-2.png'
+import tata3 from '/Public/Assets/tata-nexarc-exp/img-tata-3.png'
 
-import perso from '../../Public/Assets/personal/perso (1).png' 
-import perso2 from '../../Public/Assets/personal/perso (2).png' 
-import perso3 from '../../Public/Assets/personal/perso (3).png' 
+import perso from '/Public/Assets/personal/perso-img-1.png' 
+import perso2 from '/Public/Assets/personal/perso-img-2.png' 
+import perso3 from '/Public/Assets/personal/perso-img-3.png' 
 
 
 function Exp() {
