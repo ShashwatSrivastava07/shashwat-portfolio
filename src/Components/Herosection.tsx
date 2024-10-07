@@ -18,7 +18,7 @@ export function HeroSection() {
       <div className="flex flex-col justify-center items-center">
         <div className="h-[40rem] flex-grow-0 flex justify-center items-center px-4">
           <div className="text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 leading-snug">
-            I'm
+            I&#39;m
             <FlipWords words={words} /> <br />
             dedicated to crafting engaging web experiences.
           </div>

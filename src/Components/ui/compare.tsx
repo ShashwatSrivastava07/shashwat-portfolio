@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { SparklesCore } from "./sparkles";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Image from 'next/image';
 
 interface CompareProps {
   firstImage?: string;
@@ -16,6 +17,7 @@ interface CompareProps {
   autoplay?: boolean;
   autoplayDuration?: number;
 }
+
 export const Compare = ({
   firstImage = "",
   secondImage = "",
@@ -32,9 +34,6 @@ export const Compare = ({
   const [isDragging, setIsDragging] = useState(false);
 
   const sliderRef = useRef<HTMLDivElement>(null);
-
-  const [isMouseOver, setIsMouseOver] = useState(false);
-
   const autoplayRef = useRef<NodeJS.Timeout | null>(null);
 
   const startAutoplay = useCallback(() => {
@@ -67,12 +66,10 @@ export const Compare = ({
   }, [startAutoplay, stopAutoplay]);
 
   function mouseEnterHandler() {
-    setIsMouseOver(true);
     stopAutoplay();
   }
 
   function mouseLeaveHandler() {
-    setIsMouseOver(false);
     if (slideMode === "hover") {
       setSliderXPercent(initialSliderPercentage);
     }
@@ -82,14 +79,11 @@ export const Compare = ({
     startAutoplay();
   }
 
-  const handleStart = useCallback(
-    (clientX: number) => {
-      if (slideMode === "drag") {
-        setIsDragging(true);
-      }
-    },
-    [slideMode]
-  );
+  const handleStart = useCallback(() => {
+    if (slideMode === "drag") {
+      setIsDragging(true);
+    }
+  }, [slideMode]);
 
   const handleEnd = useCallback(() => {
     if (slideMode === "drag") {
@@ -112,10 +106,7 @@ export const Compare = ({
     [slideMode, isDragging]
   );
 
-  const handleMouseDown = useCallback(
-    (e: React.MouseEvent) => handleStart(e.clientX),
-    [handleStart]
-  );
+  const handleMouseDown = useCallback(() => handleStart(), [handleStart]);
   const handleMouseUp = useCallback(() => handleEnd(), [handleEnd]);
   const handleMouseMove = useCallback(
     (e: React.MouseEvent) => handleMove(e.clientX),
@@ -123,9 +114,9 @@ export const Compare = ({
   );
 
   const handleTouchStart = useCallback(
-    (e: React.TouchEvent) => {
+    () => {
       if (!autoplay) {
-        handleStart(e.touches[0].clientX);
+        handleStart();
       }
     },
     [handleStart, autoplay]
@@ -186,7 +177,7 @@ export const Compare = ({
             />
           </div>
           {showHandlebar && (
-            <div className="h-5 w-5 rounded-md top-1/2 -translate-y-1/2 bg-white z-30 -right-2.5 absolute   flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40]">
+            <div className="h-5 w-5 rounded-md top-1/2 -translate-y-1/2 bg-white z-30 -right-2.5 absolute flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40]">
             </div>
           )}
         </motion.div>
@@ -204,14 +195,16 @@ export const Compare = ({
               }}
               transition={{ duration: 0 }}
             >
-              <img
+              <Image
                 alt="first image"
                 src={firstImage}
                 className={cn(
-                  "absolute inset-0  z-20 rounded-2xl flex-shrink-0 w-full h-full select-none",
+                  "absolute inset-0 z-20 rounded-2xl flex-shrink-0 w-full h-full select-none",
                   firstImageClassName
                 )}
-                draggable={false}
+                layout="fill" // Use fill layout for responsive images
+                objectFit="cover" // Maintain aspect ratio
+                priority // Load this image eagerly
               />
             </motion.div>
           ) : null}
@@ -220,15 +213,19 @@ export const Compare = ({
 
       <AnimatePresence initial={false}>
         {secondImage ? (
-          <motion.img
-            className={cn(
-              "absolute top-0 left-0 z-[19]  rounded-2xl w-full h-full select-none",
-              secondImageClassname
-            )}
-            alt="second image"
-            src={secondImage}
-            draggable={false}
-          />
+          <motion.div className="absolute top-0 left-0 z-[19] rounded-2xl w-full h-full select-none">
+            <Image
+              alt="second image"
+              src={secondImage}
+              layout="fill" // Use fill layout for responsive images
+              objectFit="cover" // Maintain aspect ratio
+              className={cn(
+                "rounded-2xl w-full h-full select-none",
+                secondImageClassname
+              )}
+              priority // Load this image eagerly
+            />
+          </motion.div>
         ) : null}
       </AnimatePresence>
     </div>

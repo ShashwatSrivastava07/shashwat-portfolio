@@ -12,7 +12,6 @@ import SCSS from '/Public/Assets/skill-img/scss.png';
 import Bootstrap from '/Public/Assets/skill-img/boot.webp';
 import Jira from '/Public/Assets/skill-img/jira.webp';
 import TailwindCSS from '/Public/Assets/skill-img/tailwinf.webp';
-import { div } from 'framer-motion/client';
 
 const skills = [
   { src: HTML, alt: 'HTML5', label: 'HTML5' },
@@ -34,8 +33,8 @@ function Skills() {
       </div>
       <div className='px-48 mt-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-auto-rows-min grid-template-columns-[repeat(3,minmax(200px,1fr))] grid-template-rows-[repeat(2,min-content)]'>
         {skills.map((skill, index) => (
-          <div className='backdrop-blur max-w-[900px] p-6'>
-            <div key={index} className="flex flex-col items-center justify-center bg-white rounded-3xl p-6 h-full">
+          <div key={index} className='backdrop-blur max-w-[900px] p-6'>
+            <div className="flex flex-col items-center justify-center bg-white rounded-3xl p-6 h-full">
               <Image
                 src={skill.src}
                 alt={skill.alt}

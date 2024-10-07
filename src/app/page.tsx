@@ -6,7 +6,7 @@ import Project from '@/Components/Project';
 import Skills from '@/Components/Skills';
 import React, { useEffect } from 'react'
 
-function page() {
+function Page() {
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,4 +28,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
