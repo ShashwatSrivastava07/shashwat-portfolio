@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const colors = require("tailwindcss/colors");
+
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -14,6 +14,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    important: true,
     extend: {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
