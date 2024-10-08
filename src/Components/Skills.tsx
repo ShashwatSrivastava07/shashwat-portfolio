@@ -34,7 +34,7 @@ function Skills() {
       <div className='px-48 mt-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-auto-rows-min grid-template-columns-[repeat(3,minmax(200px,1fr))] grid-template-rows-[repeat(2,min-content)]'>
         {skills.map((skill, index) => (
           <div key={index} className='backdrop-blur max-w-[900px] p-6'>
-            <div className="flex flex-col items-center justify-center bg-white rounded-3xl p-6 h-full">
+            <div className="group flex flex-col items-center justify-center bg-transparent border border-white hover:bg-white hover:text-black rounded-3xl p-6 h-full transition-all hover:-translate-y-3 ease-[0, 0.55, 0.45, 1)]">
               <Image
                 src={skill.src}
                 alt={skill.alt}
@@ -42,7 +42,7 @@ function Skills() {
                 height={150}
                 className="mb-2"
               />
-              <p className="text-center text-black bold font-semibold text-2xl">{skill.label}</p>
+              <p className="text-center text-[#f5f5f5] group-hover:text-black bold font-semibold text-2xl transition-colors">{skill.label}</p>
             </div>
           </div>
         ))}

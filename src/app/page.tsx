@@ -1,6 +1,8 @@
 "use client"
 import About from '@/Components/About'
+import Contact from '@/Components/Contact';
 import Exp from '@/Components/Exp';
+import Footer from '@/Components/Footer';
 import { HeroSection } from '@/Components/Herosection'
 import Project from '@/Components/Project';
 import Skills from '@/Components/Skills';
@@ -22,6 +24,8 @@ function Page() {
         <Skills />
         <Exp />
         <Project />
+        <Contact />
+        <Footer />
       </div>
 
     </>
