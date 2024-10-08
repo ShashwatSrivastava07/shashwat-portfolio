@@ -102,7 +102,8 @@ function Exp() {
             content: (
                 <div>
                     <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-2xl font-normal mb-4">
-                        Since 2022, I have developed and deployed several key projects, including cutting-edge components and features for Aceternity, continuously enhancing functionality and user experience.
+                        Since 2022, I have developed and deployed several key personal projects, building cutting-edge components and features while continuously enhancing functionality and user experience.
+
                     </p>
                 
                     <div className="grid grid-cols-2 gap-4">
