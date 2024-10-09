@@ -15,7 +15,7 @@ function Project() {
 
         <ProjectLamp />
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 py-5 px-12 md:px-48 pb-44 -translate-y-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 py-5 px-12 md:px-48 pb-12 md:pb-44 -translate-y-8'>
           <ProjectCard
             title="Website"
             projectName="Macbook ThreeJS"
