@@ -27,7 +27,7 @@ function Exp() {
             title: "2023-Present",
             content: (
                 <div>
-                    <p className="text-neutral-200 text-3xl md:text-2xl font-normal mb-8">
+                    <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
                         The Knowledge Academy - Front End Developer
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -67,7 +67,7 @@ function Exp() {
             title: "2022-2023",
             content: (
                 <div>
-                    <p className="text-neutral-200 text-3xl md:text-2xl font-normal mb-8">
+                    <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
                         TATA Nexarc - UI Developer
                     </p>
 
