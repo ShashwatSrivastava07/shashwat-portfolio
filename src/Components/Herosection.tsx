@@ -27,6 +27,7 @@ export function HeroSection() {
           <div className="h-[40rem] sm:h-[30rem] md:h-[50rem] flex-grow-0 flex justify-center items-center px-2">
             <div className="text-4xl md:text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 leading-snug">
               I&#39;m
+              <br className="block md:hidden" />
               <FlipWords words={words} /> <br />
               dedicated to crafting engaging web experiences.
             </div>
