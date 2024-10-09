@@ -36,7 +36,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-lg md:text-4xl mb-4 text-white max-w-4xl sm:text-center lg:text-start">
           My Growth Timeline as a Frontend Developer
         </h2>
-        <p className="text-neutral-300 text-sm md:text-base max-w-sm sm:text-center lg:text-start">
+        <p className="text-neutral-300 text-sm md:text-base max-w-full sm:text-center lg:text-start">
           I&apos;ve been advancing my career in frontend development over the past 2 years. Here&apos;s a timeline of my professional growth:
         </p>
       </div>
