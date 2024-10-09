@@ -106,7 +106,7 @@ function Exp() {
 
                     </p>
 
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Image
                             src={perso}
                             alt="hero template"
