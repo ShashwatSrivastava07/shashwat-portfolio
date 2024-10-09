@@ -39,7 +39,7 @@ export function HeroSection() {
           </Button>
         </div>
         <div className="flex justify-center items-center">
-          <div className="relative w-6 h-10 border-2 border-slate-50 opacity-75	rounded-3xl flex justify-center items-center translate-y-[-45px]  tb:hidden">
+          <div className="relative w-6 h-10 border-2 border-slate-50 opacity-75	rounded-3xl justify-center items-center translate-y-[-45px] hidden lg:flex">
             <span className="w-1 h-1 bg-white rounded-full absolute top-2 animate-scroll"></span>
           </div>
         </div>
