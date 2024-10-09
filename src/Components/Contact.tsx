@@ -18,12 +18,6 @@ function Contact() {
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     };
 
-
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log("Form submitted");
-    };
-
     return (
         <>
             <section id="contact">
@@ -36,7 +30,7 @@ function Contact() {
                     </p>
 
 
-                    <form className="my-8" onSubmit={handleSubmit}>
+                    <form className="my-8">
                         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                             <LabelInputContainer>
                                 <Label htmlFor="fullname">Full name</Label>
