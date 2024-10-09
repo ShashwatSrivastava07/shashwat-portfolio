@@ -14,7 +14,7 @@ export function ProjectLamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="w-[600px] mt-8 sm:mt-0 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl sm:text-5xl font-medium tracking-tight text-transparent md:text-7xl"
+        className="w-[600px] mt-0 md:mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl sm:text-5xl font-medium tracking-tight text-transparent md:text-7xl"
       >
         Projects Spotlight
       </motion.h1>
