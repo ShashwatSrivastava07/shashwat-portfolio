@@ -30,7 +30,7 @@ function Exp() {
                     <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
                         The Knowledge Academy - Front End Developer
                     </p>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Image
                             src={tka1}
                             alt="startup template"
