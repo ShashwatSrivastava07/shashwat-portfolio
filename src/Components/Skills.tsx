@@ -32,7 +32,7 @@ function Skills() {
         <div>
           <HeadingGrade headingTxt="My Stack" />
         </div>
-        <div className='py-5 px-12 md:px-48 mt-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-auto-rows-min grid-template-columns-[repeat(3,minmax(200px,1fr))] grid-template-rows-[repeat(2,min-content)]'>
+        <div className='py-5 px-12 tb:px-14 md:px-48 mt-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-auto-rows-min grid-template-columns-[repeat(3,minmax(200px,1fr))] grid-template-rows-[repeat(2,min-content)]'>
           {skills.map((skill, index) => (
             <div key={index} className='backdrop-blur max-w-[900px] p-6'>
               <div className="group flex flex-col items-center justify-center bg-transparent border border-white hover:bg-white hover:text-black rounded-3xl p-6 h-full transition-all hover:-translate-y-3 ease-[0, 0.55, 0.45, 1)]">
