@@ -12,7 +12,7 @@ function CompareSec() {
                     style={{
                         transform: "rotateX(15deg) translateZ(80px)",
                     }}
-                    className="p-1 md:p-4 border rounded-3xl dark:bg-neutral-900 bg-neutral-100  border-neutral-200 dark:border-neutral-800 mx-auto w-3/4 h-1/2 md:h-3/4"
+                    className="p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-800 mx-auto w-3/4 h-1/2 md:h-3/4"
                 >
                     <Compare
                         firstImage="https://assets.aceternity.com/code-solution.png"
