@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, projectName, imageSrc,
                     <Image
                         src={imageSrc}
                         alt={`${projectName} image`}
-                        className="h-72 w-full max-w-full cursor-pointer overflow-hidden rounded-lg hover:scale-110 transition-all ease-in"
+                        className="h-[6rem] sm:h-72 w-full max-w-full cursor-pointer overflow-hidden rounded-lg hover:scale-110 transition-all ease-in"
                     />
                 </a>
                 <div className='flex flex-col gap-2 my-3 justify-start w-full'>
