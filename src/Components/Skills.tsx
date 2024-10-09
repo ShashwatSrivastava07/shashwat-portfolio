@@ -54,7 +54,7 @@ function Skills() {
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
           </a>
         </div>
-        <div className='px-48 mt-8 pb-8 flex justify-center'>
+        <div className='py-5 px-12 tb:px-14 md:px-48 mt-8 pb-8 flex justify-center'>
           <CompareSec />
         </div>
       </section>
