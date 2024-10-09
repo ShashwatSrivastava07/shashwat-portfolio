@@ -11,34 +11,34 @@ function Project() {
   return (
     <>
 
-      <div className='bg-[#030616]'>
+      <div id="projects-section" className='bg-[#030616]'>
 
         <ProjectLamp />
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-24 px-4 md:px-40 pb-44'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-24 px-4 md:px-40 pb-44 -translate-y-8'>
           <ProjectCard
             title="Website"
             projectName="Macbook ThreeJS"
             imageSrc={mac}
-            link="https://example.com"
+            link="https://shashwat-macbook-react.netlify.app/"
           />
           <ProjectCard
             title="Website Clone"
             projectName="Ochi Design"
             imageSrc={perso2}
-            link="https://example.com"
+            link="https://shashwat-ochi.netlify.app/"
           />
           <ProjectCard
             title="Website Clone"
             projectName="Tindog ( Tinder for Dogs )"
             imageSrc={perso3}
-            link="https://example.com"
+            link="https://incredible-pithivier-704272.netlify.app/"
           />
           <ProjectCard
             title="Website"
             projectName="Nuflix Movie App"
             imageSrc={perso}
-            link="https://example.com"
+            link="https://shashwat-nuflix-movie.netlify.app/"
           />
         </div>
 

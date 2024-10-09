@@ -14,9 +14,9 @@ import tata1 from '/Public/Assets/tata-nexarc-exp/img-tata-1.png'
 import tata2 from '/Public/Assets/tata-nexarc-exp/img-tata-2.png'
 import tata3 from '/Public/Assets/tata-nexarc-exp/img-tata-3.png'
 
-import perso from '/Public/Assets/personal/perso-img-1.png' 
-import perso2 from '/Public/Assets/personal/perso-img-2.png' 
-import perso3 from '/Public/Assets/personal/perso-img-3.png' 
+import perso from '/Public/Assets/personal/perso-img-1.png'
+import perso2 from '/Public/Assets/personal/perso-img-2.png'
+import perso3 from '/Public/Assets/personal/perso-img-3.png'
 
 
 function Exp() {
@@ -70,7 +70,7 @@ function Exp() {
                     <p className="text-neutral-800 dark:text-neutral-200 text-3xl md:text-2xl font-normal mb-8">
                         TATA Nexarc - UI Developer
                     </p>
-                
+
                     <div className="grid grid-cols-2 gap-4">
                         <Image
                             src={tata1}
@@ -105,7 +105,7 @@ function Exp() {
                         Since 2022, I have developed and deployed several key personal projects, building cutting-edge components and features while continuously enhancing functionality and user experience.
 
                     </p>
-                
+
                     <div className="grid grid-cols-2 gap-4">
                         <Image
                             src={perso}
@@ -143,12 +143,15 @@ function Exp() {
 
     return (
         <>
+            <section id="exp-section">
 
-            <HeadingGrade headingTxt="Journey So Far" />
+                <HeadingGrade headingTxt="Journey So Far" />
 
-            <div className="w-full">
-                <Timeline data={data} />
-            </div>
+                <div className="w-full">
+                    <Timeline data={data} />
+                </div>
+                
+            </section>
 
         </>
     )

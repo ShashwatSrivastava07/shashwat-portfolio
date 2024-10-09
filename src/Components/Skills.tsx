@@ -28,34 +28,36 @@ const skills = [
 function Skills() {
   return (
     <>
-      <div>
-        <HeadingGrade headingTxt="My Stack" />
-      </div>
-      <div className='px-48 mt-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-auto-rows-min grid-template-columns-[repeat(3,minmax(200px,1fr))] grid-template-rows-[repeat(2,min-content)]'>
-        {skills.map((skill, index) => (
-          <div key={index} className='backdrop-blur max-w-[900px] p-6'>
-            <div className="group flex flex-col items-center justify-center bg-transparent border border-white hover:bg-white hover:text-black rounded-3xl p-6 h-full transition-all hover:-translate-y-3 ease-[0, 0.55, 0.45, 1)]">
-              <Image
-                src={skill.src}
-                alt={skill.alt}
-                width={100}
-                height={150}
-                className="mb-2"
-              />
-              <p className="text-center text-[#f5f5f5] group-hover:text-black bold font-semibold text-2xl transition-colors">{skill.label}</p>
+      <section id="skills-section">
+        <div>
+          <HeadingGrade headingTxt="My Stack" />
+        </div>
+        <div className='px-48 mt-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-auto-rows-min grid-template-columns-[repeat(3,minmax(200px,1fr))] grid-template-rows-[repeat(2,min-content)]'>
+          {skills.map((skill, index) => (
+            <div key={index} className='backdrop-blur max-w-[900px] p-6'>
+              <div className="group flex flex-col items-center justify-center bg-transparent border border-white hover:bg-white hover:text-black rounded-3xl p-6 h-full transition-all hover:-translate-y-3 ease-[0, 0.55, 0.45, 1)]">
+                <Image
+                  src={skill.src}
+                  alt={skill.alt}
+                  width={100}
+                  height={150}
+                  className="mb-2"
+                />
+                <p className="text-center text-[#f5f5f5] group-hover:text-black bold font-semibold text-2xl transition-colors">{skill.label}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className='flex flex-col justify-center items-center gap-8 pb-1'>
-        <button className="w-44 border font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full text-lg">
-          <span>View My Resume</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button>
-      </div>
-      <div className='px-48 mt-8 pb-8 flex justify-center'>
-        <CompareSec />
-      </div>
+          ))}
+        </div>
+        <div className='flex flex-col justify-center items-center gap-8 pb-1'>
+          <a href="/Assets/SHASHWAT_RESUME_2024.pdf" target="_blank" rel="noopener noreferrer" className="w-44 border font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full text-lg">
+            <span>View My Resume</span>
+            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+          </a>
+        </div>
+        <div className='px-48 mt-8 pb-8 flex justify-center'>
+          <CompareSec />
+        </div>
+      </section>
 
     </>
   )

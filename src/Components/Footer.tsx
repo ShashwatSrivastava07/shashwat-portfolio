@@ -22,9 +22,9 @@ function Footer() {
                     <div className='flex flex-col gap-3'>
                         <h2 className='className="uppercase font-bold text-xl text-white"'>Social</h2>
                         <div className='flex gap-3 items-center'>
-                            <FaLinkedin className="w-[30px] h-[30px] cursor-pointer" />
-                            <FaInstagramSquare className="w-[30px] h-[30px] cursor-pointer" />
-                            <FaGithub className="w-[30px] h-[30px] cursor-pointer" />
+                            <a href="https://www.linkedin.com/in/shashwat-srivastava-6b8191137/" target='_blank'><FaLinkedin className="w-[30px] h-[30px] cursor-pointer" /></a>
+                            <a><FaInstagramSquare className="w-[30px] h-[30px] cursor-pointer" /></a>
+                            <a href="https://github.com/ShashwatSrivastava07" target='_blank'><FaGithub className="w-[30px] h-[30px] cursor-pointer" /></a>
                         </div>
                     </div>
                 </div>

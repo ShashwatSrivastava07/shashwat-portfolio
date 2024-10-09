@@ -10,19 +10,19 @@ export function NavbarMain() {
         },
         {
             name: "About",
-            link: "/about",
+            link: "#about-section",
         },
         {
             name: "Skills",
-            link: "/skills",
+            link: "#skills-section",
         },
         {
             name: "Experience",
-            link: "/exp",
+            link: "#exp-section",
         },
         {
             name: "Project",
-            link: "/project",
+            link: "#projects-section",
         },
     ];
     return (
