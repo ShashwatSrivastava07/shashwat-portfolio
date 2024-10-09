@@ -24,8 +24,8 @@ export function HeroSection() {
           <span className="w-16 h-16 bg-orange-600"></span>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="h-[40rem] sm:h-[30rem] md:h-[50rem] flex-grow-0 flex justify-center items-center px-4">
-            <div className="text-[40px] md:text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 leading-snug">
+          <div className="h-[40rem] sm:h-[30rem] md:h-[50rem] flex-grow-0 flex justify-center items-center px-4 sm:px-0">
+            <div className="text-4xl md:text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 leading-snug">
               I&#39;m
               <FlipWords words={words} /> <br />
               dedicated to crafting engaging web experiences.
