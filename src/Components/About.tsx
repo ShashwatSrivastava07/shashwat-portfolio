@@ -17,7 +17,7 @@ function About() {
         <HeadingGrade headingTxt="About Me" />
 
         <div className="flex flex-col justify-center items-center gap-8 pb-10">
-          <div className="py-5 px-12 tb:px-36 md:px-48 w-full">
+          <div className="py-5 px-12 md:px-48 w-full">
             <p className="leading-relaxed text-xl font-light text-[#fff]">
               Hi, I&#39;m{" "}
               <span className="font-bold text-sky-500">
