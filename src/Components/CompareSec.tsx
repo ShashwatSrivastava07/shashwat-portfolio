@@ -7,7 +7,7 @@ function CompareSec() {
     return (
         <>
 
-            <div className="my-8 md:w-3/4 tb:w-full h-[60vh] px-1 md:px-8 flex items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
+            <div className="my-8 w-full md:w-3/4 tb:w-full h-[60vh] px-1 md:px-8 flex items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
                 <div
                     style={{
                         transform: "rotateX(15deg) translateZ(80px)",
