@@ -69,11 +69,11 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative text-neutral-50 items-center flex space-x-1 hover:text-neutral-300 hover:text-neutral-500"
+              "relative text-neutral-50 items-center flex space-x-1 hover:text-neutral-500"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="hidden sm:block text-sm text-white">{navItem.name}</span>
           </Link>
         ))}
         <button onClick={scrollTOContacts} className="border text-sm font-medium relative border-neutral-200 border-white/[0.2] text-white px-4 py-2 rounded-full">
