@@ -38,8 +38,8 @@ export function HeroSection() {
             Projects
           </Button>
         </div>
-        <div className="flex justify-center items-center tb:hidden">
-          <div className="relative w-6 h-10 border-2 border-slate-50 opacity-75	rounded-3xl flex justify-center items-center translate-y-[-45px]">
+        <div className="flex justify-center items-center">
+          <div className="relative w-6 h-10 border-2 border-slate-50 opacity-75	rounded-3xl flex justify-center items-center translate-y-[-45px]  tb:hidden">
             <span className="w-1 h-1 bg-white rounded-full absolute top-2 animate-scroll"></span>
           </div>
         </div>
