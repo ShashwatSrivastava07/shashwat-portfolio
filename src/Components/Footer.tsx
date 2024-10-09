@@ -9,8 +9,8 @@ function Footer() {
     return (
         <>
 
-            <div className='border-t border-t-[#191919] shadow-xl px-48 py-28'>
-                <div className='flex justify-between pb-16 border-b border-b-[#18181B]'>
+            <div className='border-t border-t-[#191919] shadow-xl py-5 px-12 md:px-48  py-28'>
+                <div className='flex flex-col sm:flex-row gap-6 sm:gap-0 justify-between pb-16 border-b border-b-[#18181B]'>
                     <div className='max-w-[30rem] flex flex-col gap-3'>
                         <h2 className="uppercase font-bold text-xl text-white">
                             Shashwat Srivastava
