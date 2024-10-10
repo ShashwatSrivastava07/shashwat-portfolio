@@ -50,7 +50,7 @@ function Skills() {
           ))}
         </div>
         <div className='flex flex-col justify-center items-center gap-8 pb-1'>
-          <Link href="./Assets/my_resume.pdf" target="_blank" rel="noopener noreferrer" locale={false} className="w-44 border font-medium relative border-white/[0.2] text-white px-4 py-2 rounded-full text-lg">
+          <Link href="https://drive.google.com/file/d/1GFUcFIwH-7Xw2zjl0MPUXk-FXA6v0-IZ/view" target="_blank" rel="noopener noreferrer" locale={false} className="w-44 border font-medium relative border-white/[0.2] text-white px-4 py-2 rounded-full text-lg">
             <span>View My Resume</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
           </Link>
