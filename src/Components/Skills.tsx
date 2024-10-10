@@ -6,7 +6,7 @@ import Image from 'next/image';
 import HTML from '/Public/Assets/skill-img/html5.png'
 import CSS from '/Public/Assets/skill-img/css.webp';
 import JS from '/Public/Assets/skill-img/js.png';
-import jQuery from '/Public/Assets/skill-img/jquery.png';
+import jQuery from '/Public/Assets/skill-img/jquery.svg';
 import ReactImg from '/Public/Assets/skill-img/react.webp';
 import SCSS from '/Public/Assets/skill-img/scss.png';
 import Bootstrap from '/Public/Assets/skill-img/boot.webp';
@@ -49,7 +49,7 @@ function Skills() {
           ))}
         </div>
         <div className='flex flex-col justify-center items-center gap-8 pb-1'>
-          <a href="./Assets/SHASHWAT_RESUME_2024.pdf" target="_blank" rel="noopener noreferrer" className="w-44 border font-medium relative border-white/[0.2] text-white px-4 py-2 rounded-full text-lg">
+          <a href="./Assets/my_resume.pdf" target="_blank" rel="noopener noreferrer" className="w-44 border font-medium relative border-white/[0.2] text-white px-4 py-2 rounded-full text-lg">
             <span>View My Resume</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
           </a>
